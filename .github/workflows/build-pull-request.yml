@@ -6,7 +6,7 @@ jobs:
   build:
     name: Build Pull Request
     if: ${{ github.repository == 'spring-projects/spring-boot' }}
-    runs-on: ${{ vars.UBUNTU_MEDIUM || 'ubuntu-latest' }}
+    runs-on: ${{ vars.UBUNTU_MEDIUM || 'ubuntu-24.04' }}
     steps:
       - name: Check Out Code
         uses: actions/checkout@v4
